@@ -313,7 +313,7 @@ func (c *Client) Stop() error {
 /** modify playlists **/
 /**********************/
 
-// Clear Adds the file URI to the playlist (directories add recursively). URI can also be a single file.
+// Add Adds the file URI to the playlist (directories add recursively). URI can also be a single file.
 func (c *Client) Add(uri string) error {
 	_, err := c.Request("add %s", uri)
 	return err
